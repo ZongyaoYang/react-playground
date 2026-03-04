@@ -1,12 +1,24 @@
-import logo from './logo.svg';
+import { Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import FetchUser from './components/FetchUser';
+import Home from './components/Home';
 
 function App() {
   return (
-    <>
-    <FetchUser />
-    </>
+    <div>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/fetch">Fetch User</Link>
+      </nav>
+
+      <Routes>
+        <Route path='/fetch' element={<FetchUser />} />
+        <Route path='/' element={<Home />}/>
+        <Route />
+      </Routes>
+
+
+    </div>
   );
 }
 
