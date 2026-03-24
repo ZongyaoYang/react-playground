@@ -5,6 +5,7 @@ import Home from './components/Home';
 import UseRefHookPractice from './components/UseRefHookPractice';
 import MouseTracking from './components/MouseTracking';
 import ButtonNesting from './components/ButtonNesting';
+import UseEffectPlayground from './components/UseEffectPlayground';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Link to="/useref">useRef Hook</Link>
         <Link to='/mouse-tracking'>Mouse Tracking</Link>
         <Link to='/button-nesting'>Button Nesting</Link>
+        <Link to='/useEffect'>useEffect Playground</Link>
       </nav>
 
       <Routes>
@@ -23,6 +25,7 @@ function App() {
         <Route path='/useref' element={<UseRefHookPractice />} />
         <Route path='/mouse-tracking' element={<MouseTracking />} />
         <Route path='/button-nesting' element={<ButtonNesting />} />
+        <Route path='/useEffect' element={<UseEffectPlayground/>} />
       </Routes>
 
 
